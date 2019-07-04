@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Net.Mime;
 using System.Text;
 using Catfood.Shapefile;
 
@@ -78,12 +77,12 @@ namespace dPmax
 
                                 for (int i = 0; i < liczbaPunktow - 1; i++)
                                 {
-                                    powierzchnia = powierzchnia + (part[i].Y + part[i + 1].Y) * (part[i + 1].X - part[i].X);
+                                    powierzchnia += (part[i].Y + part[i + 1].Y) * (part[i + 1].X - part[i].X);
                                 }
 
                                 Console.WriteLine("powierzchnia czesci: " + Math.Round(powierzchnia, 2));
 
-                                powierzchniaCalkowita = powierzchniaCalkowita + (powierzchnia / 2);
+                                powierzchniaCalkowita += (powierzchnia / 2);
 
                                 double suma = 0;
 
