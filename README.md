@@ -1,3 +1,2 @@
 # dPmax
-
-# Oblicza dopuszczalną odchyłkę dla obiektów w plikach SHP
+Oblicza dopuszczalną odchyłkę dla obiektów w plikach SHP
